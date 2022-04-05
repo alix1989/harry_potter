@@ -1,0 +1,97 @@
+
+.myBackground {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vw;
+  background: url('/assets/img/hogwarts-buio.png');
+  background-size: 100%;
+}
+
+.myBackgroundLuce {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background: url('/assets/img/hogwarts.png');
+  background-size: 100%;
+}
+
+.myTitle {
+  margin-top: 10%;
+  font-family: harry;
+  font-size: 15rem;
+  color: #474d73;
+  text-shadow: 1px 1px 5px #edc664;
+}
+
+.bottone {
+  border: none;
+  background: none;
+
+}
+
+.lumos {
+  text-shadow: 0px 0px 3px #edc664;
+}
+
+.lumos:hover {
+  cursor: url(/assets/img/wand-link.png), auto;
+  animation: glowing 1300ms infinite;
+}
+
+.nox {
+  text-shadow: 0px 0px 3px #000;
+}
+
+.nox:hover {
+  text-shadow: 1px 1px 10px #000;
+  animation: notGlowing 1300ms infinite;
+}
+
+
+
+// ANIMATION
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px #a88205;
+  }
+  25% {
+    text-shadow: 0 0 20px #e8b819;
+  }
+  50% {
+    text-shadow: 0 0 30px #ffc404;
+  }
+  75% {
+    text-shadow: 0 0 40px #ffd54a;
+  }
+  100% {
+    text-shadow: 0 0 50px rgb(255, 236, 128)1;
+  }
+}
+.button {
+  animation: glowing 1300ms infinite;
+}
+
+@keyframes notGlowing {
+  0% {
+    text-shadow: 0 0 5px #352903;
+  }
+  25% {
+    text-shadow: 0 0 20px #2e2404;
+  }
+  50% {
+    text-shadow: 0 0 30px #000000;
+  }
+  75% {
+    text-shadow: 0 0 40px #000000;
+  }
+  100% {
+    text-shadow: 0 0 50px rgb(0, 0, 0)1;
+  }
+}
+.button {
+  animation: glowing 1300ms infinite;
+}

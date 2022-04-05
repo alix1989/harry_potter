@@ -1,0 +1,92 @@
+* {
+  font-family: harry;
+  font-size: 3rem;
+}
+
+.myNav {
+  position: fixed;
+  z-index: 3;
+  height: 100vh;
+  background-color:  #474d73;
+  box-shadow: 3px 2px 5px #edc664;
+}
+
+.myList {
+  list-style-type: none;
+  margin-left: -2rem;
+  margin-top: 3rem;
+  height: 100vh;
+  text-align: right;
+}
+
+a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: large;
+}
+
+a::before,
+a::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+a::before {
+  background-color: #edc664;
+  color: black;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+a::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #edc664;
+}
+
+a:hover::before {
+  color: black;
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+a:hover::after {
+  color: #edc664;
+  transform: translate3d(0, 0, 0);
+}
+
+a span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+a:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+
+a:active {
+  color: #edc664;
+}
+
+a:focus {
+  color: #edc664;
+}
+
+
+.scrittina {
+  transform: rotate(-90deg);
+  position: fixed;
+  font-family: Quicksand;
+  font-size: 1rem;
+  margin-top: -170px;
+  z-index: 3;
+  margin-left: -10px;
+}

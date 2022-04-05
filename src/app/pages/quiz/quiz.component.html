@@ -1,0 +1,41 @@
+<div class="container"><div class="text-center cappello" *ngIf="sortingHat == false" (click)="sortingClick()">
+</div>
+
+
+<div class="quiz" *ngIf="sortingHat == true"><h1>...answer sincerely!</h1>
+  <h6>Four boxes are placed before you. Which would you try and open?
+  </h6>
+  <select  [(ngModel)]="selectedValue">
+    <option *ngFor="let a of answers1" [ngValue]="a.id">{{a.answer}}</option>
+  </select>
+  <h6>You and two friends need to cross a bridge guarded by a river troll who insists on fighting one of you before he will let all of you pass. Do you:
+  </h6>
+  <select  [(ngModel)]="selectedValue2">
+    <option *ngFor="let a2 of answers2" [ngValue]="a2.id">{{a2.answer}}</option>
+  </select>
+  <h6>Once every century, the Flutterby bush produces flowers that adapt their scent to attract the unwary. If it lured you, it would smell of:
+  </h6>
+  <select  [(ngModel)]="selectedValue3">
+    <option *ngFor="let a3 of answers3" [ngValue]="a3.id">{{a3.answer}}</option>
+  </select>
+  <h6>You enter an enchanted garden. What would you be most curious to examine first?
+  </h6>
+  <select  [(ngModel)]="selectedValue4">
+    <option *ngFor="let a4 of answers4" [ngValue]="a4.id">{{a4.answer}}</option>
+  </select>
+  <h6>Four goblets are placed before you. Which would you choose to drink?
+  </h6>
+  <select  [(ngModel)]="selectedValue5">
+    <option *ngFor="let a5 of answers5" [ngValue]="a5.id">{{a5.answer}}</option>
+  </select>
+  <div class="text-center mt-5"><button class="bottone" type="button" (click)="getA1()">send</button></div>
+
+
+<div class="results">
+  <div class="text-center" id="huffle" class="hide mt-5"><h1 class="tassorosso">Hufflepuff!</h1><div class="text-center mt-5"><img src="/assets/img/hufflepuffGif.gif" style="margin: auto"></div></div>
+  <div class="text-center" id="slyth" class="hide mt-5"><h1 class="serpeverde">Slytherin!</h1><div class="text-center mt-5"><img src="/assets/img/slytherinGif.gif" style="margin: auto"></div></div>
+  <div class="text-center" id="raven" class="hide mt-5"><h1 class="corvonero">Ravenclaw!</h1><div class="text-center mt-5"><img src="/assets/img/ravenclawGif.gif" style="margin: auto"></div></div>
+  <div class="text-center" id="gryf" class="hide mt-5"><h1 class="grifondoro">Gryffindor!</h1><div class="text-center mt-5"><img src="/assets/img/gryffindorGif.gif" style="margin: auto"></div></div>
+</div>
+</div>
+</div>

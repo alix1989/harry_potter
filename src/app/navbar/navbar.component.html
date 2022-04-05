@@ -1,0 +1,35 @@
+
+<nav class="navbar navbar-expand-lg myNav">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="myList">
+      <li class="">
+        <a class="nav-link" title="Homepage" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  data-replace="Home"><span>Home</span></a>
+      </li>
+      <li class="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false " data-replace="Characters">
+          <span>Characters</span>
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" title="Characters" [routerLink]="['/characters']" routerLinkActive="active"  data-replace="See All"><span>See All</span></a>
+          <a class="dropdown-item" title="Students" [routerLink]="['/students']" routerLinkActive="active" data-replace="Students"><span>Students</span></a>
+          <a class="dropdown-item" title="Hogwarts's Staff" [routerLink]="['/staff']" routerLinkActive="active" data-replace="Staff"><span>Staff</span></a>
+</div>
+      </li>
+      <li class="">
+        <a class="nav-link"[routerLink]="['/houses']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  data-replace="Houses">
+          <span>Houses</span>
+        </a>
+      </li>
+      <li class="">
+        <a class="nav-link"[routerLink]="['/test']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  data-replace="Test">
+          <span>Test</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="text-white scrittina">PC optimized site. All right reserved © wizarding world.</div>
+  </div>
+</nav>

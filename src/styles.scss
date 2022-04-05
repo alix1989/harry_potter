@@ -1,1 +1,102 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@font-face {
+  font-family: harry;
+  src: url(/assets/fonts/HARRYP__.TTF);
+
+}
+
+
+* {
+  font-family: Quicksand;
+  cursor:  url(/assets/img/wand.png), auto;
+}
+
+a, button {
+  cursor: url(/assets/img/wand-link.png), auto;
+}
+
+// .carta {
+//   padding: 10px;
+//   padding-top: 30px;
+//   width: 20%;
+//   height: 20%;
+//   text-align: center;
+//   background:  #474d73;
+//   box-shadow: 2px 2px 6px #edc664;
+// }
+
+
+// .contenitore-immagine {
+//   width: 150px;
+//   height: 150px;
+//   border-radius: 100%;
+//   overflow: hidden;
+//   margin: auto;
+// box-shadow: 1px 1px 1px black;
+// }
+
+// .immagine {
+//   width: 100%;
+// }
+
+.lista {
+  overflow: auto;
+ margin: auto;
+ margin-left: 6%;
+ padding-top: 2%;
+}
+
+.nome {
+  font-family: harry;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 1px 1px 1px #222;
+}
+
+.testo-carta {
+  color: rgb(0, 0, 0);
+}
+
+.grifondoro {
+  font-family: harry;
+  background: linear-gradient(90deg, rgba(173,0,0,1) 0%, rgba(224,143,0,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.205);
+  font-size: 3rem;
+}
+
+.serpeverde {
+  font-family: harry;
+  background: linear-gradient(90deg, rgba(0,173,2,1) 0%, rgba(0,0,0,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.205);
+  font-size: 3rem;
+}
+
+.tassorosso {
+  font-family: harry;
+  background: linear-gradient(90deg, rgba(255,177,5,1) 0%, rgba(0,0,0,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.205);
+  font-size: 3rem;
+}
+
+.corvonero {
+  font-family: harry;
+  background: linear-gradient(90deg, rgba(0,27,173,1) 0%, rgba(0,0,0,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 1px rgba(51, 51, 51, 0.205);
+  font-size: 3rem;
+}
+
